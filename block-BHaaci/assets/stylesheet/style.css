@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Global Style */
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: url("../bg-intro-desktop.png")center/cover no-repeat,linear-gradient( rgba(255, 120, 120, 0.993), rgba(255, 120, 120, 0.993));
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 100vh;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  flex: 0 1 50%;
+  color: white;
+}
+
+.heading {
+  font-size: 34px;
+  line-height: 1.1;
+  font-weight: 700;
+  
+}
+
+.main-text {
+  font-size: 15px;
+  margin-top: 25px;
+  font-weight: 500;
+}
+
+.form-container {
+  flex: 0 1 50%;
+  padding: 20px;
+}
+.form-control {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #c2c1c1;
+  outline: 0;
+  margin-bottom: 13px;
+  padding: 10px;
+  color: #474649;
+  font-weight: 600;
+}
+
+.form-control:focus {
+  outline: 1.5px solid #A5A0B3;
+  border-radius: 4px;
+  border: 0;
+  color: #222124;
+  font-weight: 600;
+}
+.form {
+  background: white;
+  padding: 25px 25px 35px 25px;
+  border-radius: 4px;
+  box-shadow: 0 4px 2px 1px rgba(0, 0, 0, 0.219);
+}
+.offer {
+  padding: 5px 20px;
+  background: #5D54A3;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  color: white;
+  font-size: 15px;
+  box-shadow: 0 4px 2px 1px rgba(0, 0, 0, 0.219);
+}
+
+.offer span {
+  font-weight: bolder;
+}
+
+button {
+  color: white;
+  text-align: center;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+  border: 0;
+  background: #37cc8a;
+  font-weight: 500;
+}
+
+.terms-and-condition {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+  color: #cac9d1;
+}
+
+.terms-and-condition span {
+  color: #EF898E;
+  font-weight: bold;
+}
