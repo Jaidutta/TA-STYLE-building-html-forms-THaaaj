@@ -498,8 +498,8 @@ iframe {
 }
 
 /* Footer */
-footer {
-  padding: 16px;
+footer .container {
   text-align: center;
-  background: #69c6ba;
+  padding: 16px;
+  background: #69c6ba;;
 }
