@@ -1,0 +1,505 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Global CSS */
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.5;
+  background: #E6E6E6;
+  color: white;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.inner-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.justify-left {
+  justify-content: flex-start;
+}
+
+.justify-right {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.direction-column {
+  display: flex;
+  justify-content: space-between;
+}
+.img-100 {
+  width: 100%;
+  display: block;
+}
+
+.padding {
+  padding: 80px 0;
+}
+
+.padding-x {
+  padding: 0 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.col-1-2 {
+  flex: 0 1 50%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: #69c6ba;
+  color: white;
+}
+
+.btn-green-text {
+  background-color: white;
+  color: #69c6ba;
+}
+
+.btn-purple-text {
+  background-color: white;
+  color: #c66995;
+}
+.secondary-heading {
+  font-size: 28px;
+}
+
+.subsection-heading {
+  font-size: 24px;
+}
+/* Custom CSS  */
+.header {
+  padding: 18px 100px;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.brand .brand-logo {
+  height: 30px;
+  object-fit: cover;
+}
+
+.brand span {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+.nav li {
+  margin-left: 20px;
+}
+
+.nav a {
+  color: black;
+  font-weight: 600;
+}
+
+.hero {
+  min-height: 100vh;
+  background:  linear-gradient( to bottom, rgba(0, 0, 0, .80), rgba(0, 0, 0, .80)), url("../banner.jpg") 0 60px/cover no-repeat ;
+  text-align: center;
+}
+
+.main-heading {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.down-arrow {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #69c6ba;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 18px auto 50px;
+}
+
+form {
+  max-width: 880px;
+  margin: 0 auto;
+  background: white;
+  color: white;
+  padding: 20px;
+  font-weight: 600;
+}
+
+.label {
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: none;
+}
+
+input[name="check-in"] {
+  text-align: left;
+}
+
+.total-rooms {
+  flex: 0 1 45%;
+}
+
+.total-adult {
+  flex: 0 1 20%;
+}
+
+.total-children {
+  flex: 0 1 25%;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  align-content: stretch;
+}
+
+button {
+  width: 100%;
+  background: #69c6ba;
+  border: none;
+  padding: 8px;
+  color: white;
+}
+
+/* Vision */
+.vision {
+  padding: 50px;
+  background: #EFEFEF;
+  color: #595c5f;
+  text-align: center;
+}
+
+.vision span {
+  font-weight: bolder;
+}
+
+.vision-wrapper {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.vision-wrapper .btn {
+  margin: 20px 0 27px;
+}
+
+.content article {
+  padding: 20px;
+  margin: 0 50px 0 -50px;
+  position: relative;
+}
+
+.content .btn {
+  margin-top: 20px;
+}
+
+.content p {
+  font-size: 13px;
+}
+.arrow-container {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(97, 91, 86, 0.904);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;  
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+
+
+
+/* Erope's Most visited places */
+.most-visited-place-content article, 
+.americas-place article {
+  background-color: #69c6ba;
+  position: relative;
+}
+
+.most-visited-place-content .left,
+.americas-place .left
+ {
+  left: -75px;  
+}
+
+.most-visited-place-content .right,
+.americas-place .right
+ {
+  left: -34px;
+}
+.col-1-2 {
+  flex: 0 1 50%;
+}
+
+/* Asia's Most popular places */
+.asias-most-popular-place, 
+.americas-place,
+.europes-most-visited-place
+ {
+  background-color: white;
+}
+.asias-most-popular-place article {
+  background-color: #c66995;
+  padding: 20px;
+  margin: 0 -50px 0 50px;
+  position: relative;
+}
+
+.asias-most-popular-place .right{
+   right: -35px;
+} 
+
+.asias-most-popular-place .left{
+  right: -74px;
+} 
+
+/* World Map */
+.world-map .container {
+  background-color: #69c6ba;
+}
+.map-item {
+  flex: 0 1 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-item.asia {
+  background: #c66995;
+}
+
+.map-item img {
+  object-fit: none;
+  object-position: 50% 70%;
+}
+
+.map-item figcaption {
+  font-size: 14px;
+}
+
+/* Special Offer */
+
+.special-offer-wrapper {
+  padding: 80px 120px;
+  background: white;
+  height: auto;
+  text-align: center;
+}
+
+.special-offer-wrapper .flex {
+  margin-bottom: 18px;
+}
+.special-offer-img-wrapper {
+  flex: 0 1 30%;
+  align-self: stretch;
+}
+
+.special-offer-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.special-offer-content {
+  padding: 20px 0 20px 20px;
+  background-color: #fff;
+  align-self: stretch;
+  flex: 0 1 40%;
+  text-align: left;
+}
+
+.rectangle-container {
+  flex: 0 1 30%;
+  position: relative;
+  align-self: stretch;
+}
+
+.rectangle-container img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  z-index: 100;
+  height: 100%;
+}
+.rectangle {
+  display: inline-block;
+  background-color: #69c6ba;
+  height: 100%;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.rectangle-content {
+  text-align: center;
+  transform: translateY(60px);
+}
+
+.rectangle-content h3 {
+  font-size: 28px;
+}
+.rectangle-content p {
+  text-align: center;
+}
+.special-offer-heading {
+  font-size: 22px;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.special-offer-subheading {
+  font-size: 18px;
+  color: #c66995;
+  font-weight: 500;
+}
+
+.special-offer-txt {
+  color: #B8B6B6;
+  font-size: 12px;
+}
+
+iframe {
+  width: 100%;
+  height: 500px;
+}
+
+/* Form */
+.map-form {
+  max-width: 420px;
+  position: absolute;
+  right: 80px;
+  top: 40px;
+  padding: 20px;
+}
+
+.map .container {
+  position:relative;
+}
+
+
+.map-form-control {
+  padding: 10px;
+  background: #f5f5f5;
+  margin: 8px 0;
+  color: #9ca3a9;
+  font-weight: 500;
+  font-size: 14px;
+  border: 0;
+}
+
+.map-form .email, 
+.map-form .name {
+ width: 48%;
+ margin: 0;
+}
+
+.subject {
+  width: 100%;
+}
+
+.map-form textarea {
+  resize: none;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+}
+
+/* Footer */
+footer .container {
+  text-align: center;
+  padding: 16px;
+  background: #69c6ba;;
+}
